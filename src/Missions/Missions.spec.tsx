@@ -16,6 +16,7 @@ describe("Missions test", () => {
                         },
                     },
                     rocket: "5e9d0d95eda69973a809d1ec",
+                    id: "5e9fghfghfghf56456456"
                 },
                 {
                     name: "name2",
@@ -26,7 +27,8 @@ describe("Missions test", () => {
                             original: ["https://live.staticflickr.com/65535/49178460143_e3ae2bd506_o.jpg"],
                         },
                     },
-                    rocket: "5e9d0d95eda69973a809d1ec",
+                    rocket: "5e9d0d9567567973a809d1ec",
+                    id: "778e9d0d95eda69456456456"
                 },
             ],
         };

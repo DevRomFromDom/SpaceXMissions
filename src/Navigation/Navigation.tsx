@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navigation.module.scss";
 import classNames from "classnames";
-import { useDispatch, connect } from "react-redux";
+import { useDispatch } from "react-redux";
 import { reverseMissions } from "../store";
 
 const Navigation = () => {
@@ -21,8 +21,8 @@ const Navigation = () => {
         <div className={styles.nav__wrapper}>
             <div className={styles.nav_name}>Название миссии</div>
             <div className={styles.nav_date}>
-                Дата запуска{" "}
-                <button data-testid="btn-test" className={styledBtn} onClick={() => handleReverse()}>
+                Дата запуска
+                <button data-testid="btn-test" className={styledBtn} onClick={handleReverse}>
                     &#x27A2;
                 </button>
             </div>
@@ -32,4 +32,4 @@ const Navigation = () => {
     );
 };
 
-export default connect(null, { reverseMissions })(Navigation);
+export default Navigation;

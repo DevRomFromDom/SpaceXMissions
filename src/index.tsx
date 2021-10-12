@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./src/App";
+import App from "./App";
 import "./index.scss";
 import { Provider } from "react-redux";
 import { createStore, compose, applyMiddleware } from "redux";
-import rootReducer from "./src/store/reducers";
+import rootReducer from "./store/reducers";
 import createSagaMiddleware from "redux-saga";
-import rootSaga from "./src/store/sagas"
+import rootSaga from "./store/sagas"
 declare global {
     interface Window {
         __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;

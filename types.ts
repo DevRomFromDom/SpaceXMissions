@@ -8,4 +8,5 @@ export interface IMission {
         };
     };
     rocket: string;
+    id: string
 }

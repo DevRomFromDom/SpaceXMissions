@@ -17,11 +17,12 @@ describe("test missions reducer", () => {
                             },
                         },
                         rocket: "5e9d0d95eda69973a809d1ec",
+                        id: "dfdfdfdfdf"
                     },
                 ])
             )
         ).toEqual([
-            [
+            
                 {
                     name: "name",
                     date_utc: "2019-12-05T17:29:23.000Z",
@@ -32,8 +33,9 @@ describe("test missions reducer", () => {
                         },
                     },
                     rocket: "5e9d0d95eda69973a809d1ec",
+                    id: "dfdfdfdfdf"
                 },
-            ],
+            
         ]);
     });
     it("reducer reverse missions action", async () => {
@@ -50,6 +52,7 @@ describe("test missions reducer", () => {
                             },
                         },
                         rocket: "5e9d0d95eda69973a809d1ec",
+                        id: "dfddfgdfdfdfdf"
                     },
                     {
                         name: "name2",
@@ -61,6 +64,7 @@ describe("test missions reducer", () => {
                             },
                         },
                         rocket: "5e9d0d95eda69973a809d1ec",
+                        id: "dfdfd456456fdfdf"
                     },
                 ],
                 await reverseMissions()
@@ -76,6 +80,7 @@ describe("test missions reducer", () => {
                     },
                 },
                 rocket: "5e9d0d95eda69973a809d1ec",
+                id: "dfdfd456456fdfdf"
             },
             {
                 name: "name1",
@@ -87,6 +92,7 @@ describe("test missions reducer", () => {
                     },
                 },
                 rocket: "5e9d0d95eda69973a809d1ec",
+                id: "dfddfgdfdfdfdf"
             },
         ]);
     });

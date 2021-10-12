@@ -14,7 +14,7 @@ describe("Mission test", () => {
                 },
             },
             rocket: "5e9d0d95eda69973a809d1ec",
-            index: 2,
+            id: '5e9d0d95eda69973a809d1ec',
         };
         const { container } = render(<Mission mission={mission} />);
         expect(container.innerHTML).toMatch("name");

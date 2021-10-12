@@ -9,10 +9,9 @@ export default function missions(state = initialState, action: IAction) {
     switch (action.type) {
         case "SET_MISSIONS":
             const newMissions = action.payload;
-            return [...state, newMissions];
+            return  newMissions;
         case "REVERSE_MISSIONS":
-            const newState = [...state.flat().reverse()];
-            return [...newState];
+            return state.flat().reverse();
         default:
             return state;
     }
